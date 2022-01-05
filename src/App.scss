@@ -1,0 +1,24 @@
+// .app {
+//   height: 100vh;
+
+//   .content {
+//     width: 100%;
+//     height: calc(100vh - 70px);
+//     overflow-y: scroll;
+//     scroll-snap-type: y mandatory;
+//     scroll-behavior: smooth;
+//     scrollbar-width: none;
+//     &::-webkit-scrollbar {
+//       display: none;
+//     }
+
+//     position: relative;
+//     top: 70px;
+
+//     > * {
+//       width: 100%;
+//       height: calc(100vh - 70px);
+//       scroll-snap-align: start;
+//     }
+//   }
+// }

@@ -13,3 +13,8 @@
     text-decoration: none;
     color: inherit;
   }
+
+  .content-div {
+    min-height: 100vh;
+  }
+  

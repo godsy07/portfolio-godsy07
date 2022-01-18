@@ -1,40 +1,53 @@
 import React from "react";
-import { Tabs, Carousel } from "antd";
 
 import "./skills.styles.scss";
+import { Col, Container, Row, Tabs, Tab } from "react-bootstrap";
 
 const Skills = () => {
-  const {TabPane} = Tabs;
   return (
-    <div className='skills-div' id='skills'>
-      <div className="skills-content">
-        <h2>Skills</h2>
-        <span>Here are some technologies I have worked on:</span>
-        <div style={{ backgroundColor: "#000", height: "2px", width: "100%", margin: "10px 0" }}></div>
-        <div className="skills-info-div">
-        <Tabs defaultActiveKey="1" tabPosition="left">
-          <TabPane tab="Programming" key="1" className="skills-info">
-            <ul>
-              <li>HTML, CSS and JavaScript</li>
-              <li>React JS, Node JS</li>
-              <li>PHP</li>
-            </ul>
-          </TabPane>
-          <TabPane tab="Database" key="2" className="skills-info">
-            <ul>
-              <li>SQL</li>
-              <li>MongoDB</li>
-            </ul>
-          </TabPane>
-          <TabPane tab="S/W Development" key="3" className="skills-info">
-            <ul>
-              <li>GitHub</li>
-            </ul>
-          </TabPane>
-        </Tabs>
-        </div>
-      </div>
-    </div>
+    <>
+      <Container id='skills' className='skills-div d-flex justify-content-center align-items-center'>
+        <Row>
+          <Col>
+            <div className='skills-content d-flex flex-column py-2 px-4'>
+              <h2 className='text-center'>Skills</h2>
+              <div className='text-center mb-3'>
+                Here are some technologies I have worked on:
+              </div>
+              <Tabs defaultActiveKey='programming' className='mb-3'>
+                <Tab eventKey='programming' title='Languages'>
+                  <div>
+                    Programming
+                    <ul>
+                      <li>HTML, CSS and JavaScript</li>
+                      <li>React JS, Node JS</li>
+                      <li>PHP</li>
+                    </ul>
+                  </div>
+                </Tab>
+                <Tab eventKey='db' title='Database'>
+                  <div>
+                    DB
+                    <ul>
+                      <li>SQL</li>
+                      <li>MongoDB</li>
+                    </ul>
+                  </div>
+                </Tab>
+                <Tab eventKey='sw' title='Softwares'>
+                  <div>
+                    S/W
+                    <ul>
+                      <li>GitHub</li>
+                    </ul>
+                  </div>
+                </Tab>
+              </Tabs>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </>
   );
 };
 

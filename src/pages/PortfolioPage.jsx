@@ -10,7 +10,7 @@ import './portfolio-page.styles.scss';
 
 const PortfolioPage = () => {
   return (
-    <div className='app' id="home">
+    <main className='app' id="home">
       <Header />
       <div className='content'>
         <About />
@@ -18,7 +18,7 @@ const PortfolioPage = () => {
         <Works />
         <Contact />
       </div>
-    </div>
+    </main>
   );
 };
 
